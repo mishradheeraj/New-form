@@ -28,21 +28,22 @@ $font-Weights: (
 );
 
 @mixin width-90{
+    width: 900px;
     max-width: 900px;
-    margin: 0 auto;
 }
 
+$ultra-padding: 20px 30px;
 $horizontal-padding: 10px;
 $bordr-radius:0.2rem;
 $txt-center:center;
 $ultra-margin:20px 0px;
+$box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
 @mixin bordr-box{
     border-width: 0.5px;
     border-style: solid;
     border-color: #79717191;
 }
-
 
 $font-sizes:(
   "sm": 14px,
@@ -68,16 +69,38 @@ h1{
     text-align: $txt-center;
 }
 
+.signup-frm img {
+  display: block;
+  margin: 0 auto;
+}
+
+
 .signup-frm p{
     color: $cool-Gray;
     text-align: $txt-center;
+    font-size: map-get($font-sizes, "sm" );
 }
 
+.signup-frm form span{
+    color: $cool-Gray;
+    font-size: map-get($font-sizes, "sm" )
+}
+
+
 .form-section{
+   position: relative;
+}
+
+.signup-frm{
     @include width-90;
-    @include bordr-box;
     border-radius: $bordr-radius;
-    padding: $horizontal-padding;
+    padding: $ultra-padding;
+    background-color: $primary-white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: $box-shadow;
 }
 
 .frm_input_main{

@@ -11,19 +11,37 @@ h1 {
   text-align: center;
 }
 
+.signup-frm img {
+  display: block;
+  margin: 0 auto;
+}
+
 .signup-frm p {
   color: #8a8a8a;
   text-align: center;
+  font-size: 14px;
+}
+
+.signup-frm form span {
+  color: #8a8a8a;
+  font-size: 14px;
 }
 
 .form-section {
+  position: relative;
+}
+
+.signup-frm {
+  width: 900px;
   max-width: 900px;
-  margin: 0 auto;
-  border-width: 0.5px;
-  border-style: solid;
-  border-color: rgba(121, 113, 113, 0.568627451);
   border-radius: 0.2rem;
-  padding: 10px;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .frm_input_main {
